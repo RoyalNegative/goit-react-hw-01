@@ -1,0 +1,35 @@
+.transactionHistory {
+  max-width: 1024px;
+}
+
+.transactionHistory__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+}
+
+.transactionHistory_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.transaction__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.transaction__item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+  width: 100%;
+}

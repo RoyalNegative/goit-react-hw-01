@@ -11,7 +11,7 @@ function Profile({ name, tag, location, image, stats }) {
           alt="User avatar"
           className={css['profile-image']}
         />
-        <p className={css['profile-name']}>{name}</p>
+        <h1 className={css['profile-name']}>{name}</h1>
         <p className={css['profile-tag']}>@{tag}</p>
         <p className={css['profile-location']}>{location}</p>
       </div>

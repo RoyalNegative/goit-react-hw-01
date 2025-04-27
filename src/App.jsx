@@ -1,7 +1,10 @@
+import React from 'react';
 import './App.css'
 import Profile from './components/Profile/Profile'
-
-
+import friends from './friends.json';
+import FriendList from './components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/Transaction';
+import transactions from './transactions.json';
 function App() {
   const userData = {
     username: "Jacques Gluke",
@@ -16,15 +19,17 @@ function App() {
   };
 
   return (
-    <>
+    <div>
       <Profile
         name={userData.username}
         tag={userData.tag}
-        location={userData.location}
+      location={userData.location}
         image={userData.avatar}
         stats={userData.stats}
       />
-    </>
+      <FriendList friends={friends} />
+      <TransactionHistory transactions={transactions} />
+    </div>
   );
 }
 
